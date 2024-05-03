@@ -1,0 +1,50 @@
+# num_1 = int(input("Enter a number: "))
+# num_2 = int(input("Enter another number: "))
+
+def add(x, y):
+    return x + y
+
+def Subtract(x, y):
+    return x - y
+
+def Multiply(x, y):
+    return x * y
+
+def Divide(x, y):
+    return x / y
+
+print("choose operator from below")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+
+while True:
+    Select = input("Select Operator(1/2/3/4): ")
+    
+    if Select in ('1', '2', '3', '4'):
+        num_1 = int(input("Enter a number: "))
+        num_2 = int(input("Enter another number: "))
+        
+    if Select == '1':
+        print(num_1, "+", num_2, "=", add(num_1, num_2))
+        
+    elif Select == '2':
+        print(num_1, "-", num_2, "=", Subtract(num_1, num_2))
+        
+    elif Select == '3':
+        print(num_1, "*", num_2, "=", Multiply(num_1, num_2))
+        
+    elif Select == '4':
+        print(num_1, "/", num_2, "=", Divide(num_1, num_2))
+        
+    
+    next_calculation = input("Do you want to make another Calculation? (yes/no): ")
+    if next_calculation == "no":
+        break
+    
+    else:
+        print("Invalid Input")
+    
+        
+        
